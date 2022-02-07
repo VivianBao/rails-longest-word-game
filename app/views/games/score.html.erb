@@ -6,9 +6,9 @@ Message: Well Done!-->
   <h2>Result</h2>
   <h3><%= @message %></h3>
   <div class='score-container'>
-    <p>Your word: <%= @word %></p>
-    <p>Time Taken to Answer: <%= @time %></p>
-    <p>Your score: <%= @score %></p>
+    <p><span class="icon"><i class="far fa-comment-dots fa-fw"></i></span>Your word: <%= @word %></p>
+    <p><span class="icon"><i class="fas fa-hourglass-half fa-fw"></i></span>Time Taken to Answer: <%= @time %></p>
+    <p><span class="icon"><i class="fas fa-trophy fa-fw"></i></span>Your score: <%= @score %></p>
   </div>
 
   <div class="new-button"><%= link_to 'Start New Game', root_path %></div>
