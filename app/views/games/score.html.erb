@@ -7,7 +7,7 @@ Message: Well Done!-->
   <h3><%= @message %></h3>
   <div class='score-container'>
     <p><span class="icon"><i class="far fa-comment-dots fa-fw"></i></span>Your word: <%= @word %></p>
-    <p><span class="icon"><i class="fas fa-hourglass-half fa-fw"></i></span>Time Taken to Answer: <%= @time %></p>
+    <p><span class="icon"><i class="fas fa-hourglass-half fa-fw"></i></span>Time Taken to Answer: <%= @time %> <%= @time > 1 ? "seconds" : "second"%></p>
     <p><span class="icon"><i class="fas fa-trophy fa-fw"></i></span>Your score: <%= @score %></p>
   </div>
 
