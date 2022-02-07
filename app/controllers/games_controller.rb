@@ -13,7 +13,7 @@ class GamesController < ApplicationController
     @word = params[:word]
     @grid_passed = params[:grid].split
     @time_passed = Time.at(params[:time].to_i)
-    @time = Time.now - @time_passed
+    @time = (Time.now - @time_passed).floor(2)
     @word.split.each do |letter|
       if @grid_passed.delete(letter)
         @message = "Sorry but #{@word} can not be built out of #{@grid_passed.join(', ')}"
