@@ -1,7 +1,12 @@
 <div class="container">
   <h1 class="title">Welcome to the longest word game!</h1>
   <h2 class="subtitle">Here is your grid:</h2>
-  <%= @grid%>
+  <div class='grid-container'>
+    <%= @grid%>
+    <%= link_to root_path, class: "reset-button" do %>
+      <i class="fas fa-redo"></i>
+    <% end %>
+  </div>
   <h2 class="subtitle">What is your longest word?</h2>
   <form action="/score" method="post">
     <input type="text" class="input-field" name='word' placeholder="Type your answer here!">
