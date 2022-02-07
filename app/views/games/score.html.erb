@@ -2,11 +2,14 @@
 Time Taken to answer: 12.07916
 Your score: 3.194722666666667
 Message: Well Done!-->
-<h2>Result</h2>
-<h3><%= @message %></h3>
+<div class="container">
+  <h2>Result</h2>
+  <h3><%= @message %></h3>
+  <div class='score-container'>
+    <p>Your word: <%= @word %></p>
+    <p>Time Taken to Answer: <%= @time %></p>
+    <p>Your score: <%= @score %></p>
+  </div>
 
-<p>Your word: <%= @word %></p>
-<p>Time Taken to Answer: <%= @time %></p>
-<p>Your score: <%= @score %></p>
-
-<p><%= link_to 'Start New Game', root_path %></p>
+  <div class="new-button"><%= link_to 'Start New Game', root_path %></div>
+</div>

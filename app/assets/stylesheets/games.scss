@@ -14,7 +14,7 @@
   color: white;
   text-shadow: 0 0 1px rgb(160, 159, 159);
 }
-form > input {
+form > input, .new-button {
   padding: 10px;
   border: none;
   border-radius: 3px;
@@ -28,6 +28,30 @@ form > input {
 }
 
 .submit-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px #ffb983;
+}
+
+
+.score-container{
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.new-button > a{
+  text-decoration: none;
+  color: white;
+}
+
+.new-button {
+  width: 50%;
+  background-color: #e28743;
+  margin: 0 auto;
+}
+
+.new-button:hover {
   cursor: pointer;
   box-shadow: 0 0 8px #ffb983;
 }
